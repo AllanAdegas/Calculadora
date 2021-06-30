@@ -31,45 +31,40 @@ int main(){
                         printf ("Chose the second number:  ");
                         scanf("%f", &Number2);
                         //Data output.
-                        printf("Result %f", result = Number1 + Number2);
+                        printf("Result %.2f", result = Number1 + Number2);
                 }
                     else if (Operation == '-'){
                             printf ("Chose the second number::  ");
                             scanf("%f", &Number2);
                         //Data output.
-                            printf("Result: %f", result = Number1 - Number2);
+                            printf("Result: %.2f", result = Number1 - Number2);
                     }
                     else if (Operation == '/'){
                             printf ("Chose the second number::  ");
                             scanf("%f", &Number2);
                         //Data output.
-                            printf("Result: %f", result = Number1 / Number2);
+                            printf("Result: %.2f", result = Number1 / Number2);
                     }
                     else if (Operation == '*'){
                         printf ("Chose the second number::  ");
                         scanf("%f", &Number2);
                         //Data output.
-                        printf("Result: %f", result = Number1 * Number2);
+                        printf("Result: %.2f", result = Number1 * Number2);
                     }
                     else if (Operation == '^'){
                         printf ("Chose the second number::  ");
                         scanf("%f", &Number2);
                         //Data output.
-                        printf("Result: %f", result = pow(Number1, Number2));
+                        printf("Result: %.2f", result = pow(Number1, Number2));
                     }
                         else if (Operation == 'r') {
                         //Data output.
-                            printf ("Result: %f", result = sqrt(Number1));
+                            printf ("Result: %.2f", result = sqrt(Number1));
                     }
                         //Data output.
                             else {printf ("Invalid operation \n");
                     }
 
-        //Storage of results.
-            FILE * fpointer = fopen("Result.txt", "a");
-            fprintf (fpointer, "Result: %f\n", result);
-
-            fclose(fpointer);
 
 
 

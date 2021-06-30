@@ -65,11 +65,6 @@ int main(){
                             else {printf ("Invalid operation \n");
                     }
 
-        //Storage of results.
-            FILE * fpointer = fopen("Result.txt", "a");
-            fprintf (fpointer, "Result: %f\n", result);
-
-            fclose(fpointer);
 
 
 

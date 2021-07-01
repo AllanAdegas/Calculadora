@@ -9,70 +9,72 @@ int main()
 {
 
     //Creation of the variable that will storage the numbers and the type of the operation.
-    float number1, Number2;
-    char Operation;
+    float number1, number2;
+    char operation;
 
     //Creation of the variable that will storage the result.
     float result;
 
     //Creation of the repetition.
-    int Repetition = 1;
-    while (Repetition = 1)
+    int repetition = 1;
+    while (repetition = 1)
     {
 
         //Collection user-given information.
         printf("\n \nChose the first Number: ");
         scanf("%f", &number1);
         printf("Chose one operation(+, -, /, *, ^, r):  ");
-        scanf(" %c", &Operation);
+        scanf(" %c", &operation);
 
         //Processing the information given by the user, and collection of more user-given information.
-        if (Operation == '+')
+        if (operation == '+')
         {
             printf("Chose the second number:  ");
-            scanf("%f", &Number2);
+            scanf("%f", &number2);
             //Data output.
-            printf("Result %.2f", result = number1 + Number2);
+            printf("Result %.2f", result = number1 + number2);
             return 0;
         }
 
-        if (Operation == '-')
+        if (operation == '-')
         {
             printf("Chose the second number::  ");
-            scanf("%f", &Number2);
+            scanf("%f", &number2);
             //Data output.
-            printf("Result: %.2f", result = number1 - Number2);
+            printf("Result: %.2f", result = number1 - number2);
             return 0;
         }
 
-        if (Operation == '/')
+        if (operation == '/')
         {
             printf("Chose the second number::  ");
-            scanf("%f", &Number2);
+            scanf("%f", &number2);
             //Data output.
-            printf("Result: %.2f", result = number1 / Number2);
+            printf("Result: %.2f", result = number1 / number2);
             return 0;
         }
 
-        if (Operation == '*')
+        if (operation == '*')
         {
             printf("Chose the second number::  ");
-            scanf("%f", &Number2);
+            scanf("%f", &number2);
             //Data output.
-            printf("Result: %.2f", result = number1 * Number2);
+            printf("Result: %.2f", result = number1 * number2);
             return 0;
         }
-        else if (Operation == '^')
+        if (operation == '^')
         {
             printf("Chose the second number::  ");
-            scanf("%f", &Number2);
+            scanf("%f", &number2);
             //Data output.
-            printf("Result: %.2f", result = pow(number1, Number2));
+            printf("Result: %.2f", result = pow(number1, number2));
+            return 0;
         }
-        else if (Operation == 'r')
+        if (operation == 'r')
         {
             //Data output.
             printf("Result: %.2f", result = sqrt(number1));
+            return 0;
 
         }
         //Data output.
